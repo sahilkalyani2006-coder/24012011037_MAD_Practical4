@@ -1,0 +1,25 @@
+# MAD Practical-4
+
+**Aim:** Create an Android Alarm application by using service & BroadcastReceiver.
+
+## Project Description
+This application demonstrates how to schedule tasks in Android using the `AlarmManager` and how to handle background tasks using a `Service` and a `BroadcastReceiver`.
+
+### Key Components:
+- **MainActivity**: The user interface where users can select a time using a `TimePickerDialog`. It calculates the remaining time and schedules the alarm.
+- **AlarmManager**: Used to schedule the alarm at a precise time, even if the application is not running.
+- **AlarmBroadcastReceiver**: A background component that wakes up when the alarm triggers. It receives the intent from `AlarmManager` and starts the `AlarmService`.
+- **AlarmService**: A background service that manages the playback of the alarm ringtone using `MediaPlayer`. It ensures the music continues playing until the user cancels it.
+- **Material Design UI**: Uses `MaterialCardView`, `MaterialButton`, and `TextClock` for a modern, responsive user interface.
+
+## Screenshots
+
+<table>
+  <tr>
+    <td><img src="screenshots/main.png" width="300" alt="Main UI"></td>
+    <td><img src="screenshots/alarm.png" width="300" alt="Time Picker"></td>
+    <td><img src="screenshots/set_alarm.png" width="300" alt="Alarm Set"></td>
+  </tr>
+</table>
+
+---
